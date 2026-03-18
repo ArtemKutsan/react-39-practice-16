@@ -1,18 +1,18 @@
 // src/components/sections/Header/index.jsx
-// import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 import Nav from '../Nav';
 
 function Header() {
   return (
-    <header className="bg-slate-900 py-6 sticky top-0 z-50 text-slate-100">
-      <div className="container max-w-5xl flex justify-between items-center">
-        <Link to="/" className="text-lg font-bold">
-          React
-        </Link>
+    <AppBar position="static" sx={{ boxShadow: '0 4px 16px rgba(0, 0, 0, 0.125)' }}>
+      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', gap: 2 }}>
+        <Typography variant="h6">Material UI Todo</Typography>
         <Nav />
-      </div>
-    </header>
+      </Toolbar>
+    </AppBar>
   );
 }
 
