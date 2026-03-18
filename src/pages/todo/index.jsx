@@ -1,7 +1,7 @@
 // src/pages/home/index.jsx
 import Meta from '../../components/Meta';
 
-function Todo() {
+function TodoPage() {
   return (
     <>
       <Meta title="Todo App" />
@@ -14,4 +14,4 @@ function Todo() {
   );
 }
 
-export default Todo;
+export default TodoPage;
